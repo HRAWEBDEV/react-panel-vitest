@@ -1,7 +1,5 @@
-import { it, describe, expect } from 'vitest';
 import { screen, render } from '@testing-library/react';
 import Greet from '../../src/components/Greet';
-import '@testing-library/jest-dom/vitest';
 
 describe('group', () => {
  it('should render login button when name in not provided', () => {
