@@ -17,6 +17,23 @@ const handlers = [
    },
   ]);
  }),
+
+ http.get('/products', () => {
+  return HttpResponse.json([
+   {
+    id: 1,
+    name: 'product one',
+   },
+   {
+    id: 2,
+    name: 'product twp',
+   },
+   {
+    id: 3,
+    name: 'product three',
+   },
+  ]);
+ }),
 ];
 
 export { handlers };
