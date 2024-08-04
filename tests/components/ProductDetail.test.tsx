@@ -16,7 +16,7 @@ describe('productDetail', () => {
  });
 
  it('should show invalid id when id is invalid', async () => {
-  render(<ProductDetail productId={-1} />);
+  render(<ProductDetail productId={0} />);
   const message = await screen.findByText(/Invalid ProductId/i);
   expect(message).toBeInTheDocument();
  });
